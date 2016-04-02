@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Suite]">
+  <test name="Test">
+    <classes>
+      <class name="com.aol.tests.basetests.TestngTest"/>
+      <class name="com.aol.tests.testcases.TestCase1"/>
+      <class name="com.aol.tests.testcases.TestCase2"/>
+    </classes>
+  </test> <!-- Test -->
+  <test name="Test(failed)">
+    <classes>
+      <class name="com.aol.tests.basetests.TestngTest">
+        <methods>
+          <include name="shouldAlwaysPass"/>
+          <include name="nullPointerExseptionShouldPass"/>
+        </methods>
+      </class> <!-- com.aol.tests.basetests.TestngTest -->
+      <class name="com.aol.tests.testcases.TestCase2">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="testCase2"/>
+        </methods>
+      </class> <!-- com.aol.tests.testcases.TestCase2 -->
+      <class name="com.aol.tests.testcases.TestCase1">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="testCase1"/>
+        </methods>
+      </class> <!-- com.aol.tests.testcases.TestCase1 -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
