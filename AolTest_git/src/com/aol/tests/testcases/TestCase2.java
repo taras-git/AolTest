@@ -16,7 +16,7 @@ public class TestCase2 extends BaseTestCase{
 
 	@BeforeMethod
 	public void setUp(){
-		initDriver();
+		initDriver(CHROME);
 		initWebPages();
 	}
 	

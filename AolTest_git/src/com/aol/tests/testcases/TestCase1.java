@@ -16,7 +16,7 @@ public class TestCase1 extends BaseTestCase {
 
 	@BeforeMethod
 	public void setUp() {
-		initDriver();
+		initDriver(FIREFOX);
 		initWebPages();
 	}
 

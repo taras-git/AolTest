@@ -3,6 +3,7 @@ package com.aol.tests.basetests;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 import com.aol.tests.pages.aolpages.AolMainPage;
@@ -14,6 +15,9 @@ import com.aol.tests.utils.Utils;
 public class BaseTestCase {
 
 	private WebDriver driver;
+	
+	public final String FIREFOX = "firefox";
+	public final String CHROME	= "chrome";
 
 	/** The ini file with values for current class. */
 	String iniFile = "/resources/config/testStation.ini";	
@@ -49,11 +53,28 @@ public class BaseTestCase {
 	
 	/**
 	 * Inits the Firefox Webdriver and sets the value of implicitly wait seconds.
+	 * @param browser TODO
 	 *
 	 * @return the Webdriver
 	 */
-	public WebDriver initDriver(){
-		driver =  new FirefoxDriver();
+	public WebDriver initDriver(String browser) {
+		switch (browser) {
+
+		case FIREFOX:
+			driver = new FirefoxDriver();
+			break;
+
+		case CHROME:
+			System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "/resources/driver/chromedriver");
+			driver = new ChromeDriver();
+			break;
+
+		default:
+			driver = new FirefoxDriver();
+			break;
+
+		}
+
 		driver.manage().timeouts().implicitlyWait(Integer.parseInt(waitSeconds), TimeUnit.SECONDS);
 		return driver;
 	}
