@@ -1,41 +1,59 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 4, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 116.41 sec <<< FAILURE! - in TestSuite
-testCase1(com.aol.tests.testcases.TestCase1)  Time elapsed: 42.769 sec  <<< FAILURE!
-java.lang.AssertionError: AutoBlog page logo is not found!!!
-	at org.testng.Assert.fail(Assert.java:94)
-	at com.aol.tests.testcases.TestCase1.testCase1(TestCase1.java:82)
-
-testCase2(com.aol.tests.testcases.TestCase2)  Time elapsed: 67.935 sec  <<< FAILURE!
-org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"xpath","selector":"//a[contains(text(),\"New York, NY\")]"}
-Command duration or timeout: 30.03 seconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.52.0', revision: '4c2593cfc3689a7fcd7be52549167e5ccc93ad28', time: '2016-02-11 11:22:43'
-System info: host: 'taras-X555LAB', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.2.0-34-generic', java.version: '1.8.0_77'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=45.0, platform=LINUX, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: c9ae5b36-18aa-4663-bd7f-905fa3294c1b
-*** Element info: {Using=xpath, value=//a[contains(text(),"New York, NY")]}
+Tests run: 6, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 41.507 sec <<< FAILURE! - in TestSuite
+signUp(com.letgo.tests.testcases.TestCase1)  Time elapsed: 3.902 sec  <<< FAILURE!
+org.openqa.selenium.WebDriverException: unknown error: Element <button data-test="update-location-cancel" type="button" role="button" class="sc-dnqmqq jqPtJG sc-bxivhb ifLSwk">...</button> is not clickable at point (767, 466). Other element would receive the click: <div style="transition: opacity 0.2s linear 0s, visibility; opacity: 1; visibility: visible; background-color: rgba(255, 255, 255, 0.6);" class="Overlay__root___1UvWh" data-reactid="330">...</div>
+  (Session info: chrome=64.0.3282.167)
+  (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 10.0.15063 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.9.1', revision: '63f7b50', time: '2018-02-07T22:25:02.294Z'
+System info: host: '4DEDTYMCHYSH', ip: '10.223.164.34', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_161'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.35.528161 (5b82f2d2aae0ca..., userDataDir: C:\Users\tymchysh\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 64.0.3282.167, webStorageEnabled: true}
+Session ID: 4bb868de5c3d1d2bc08dea00268b5f29
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
 	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-	at com.aol.tests.pages.basepage.BasePage.clickElement(BasePage.java:108)
-	at com.aol.tests.pages.aolpages.AolWeatherPage.setNewLocation(AolWeatherPage.java:33)
-	at com.aol.tests.testcases.TestCase2.testCase2(TestCase2.java:43)
-Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"xpath","selector":"//a[contains(text(),\"New York, NY\")]"}
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.52.0', revision: '4c2593cfc3689a7fcd7be52549167e5ccc93ad28', time: '2016-02-11 11:22:43'
-System info: host: 'taras-X555LAB', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.2.0-34-generic', java.version: '1.8.0_77'
-Driver info: driver.version: unknown
-	at <anonymous class>.FirefoxDriver.prototype.findElementInternal_(file:///tmp/anonymous1527798704079351692webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10723)
-	at <anonymous class>.fxdriver.Timer.prototype.setTimeout/<.notify(file:///tmp/anonymous1527798704079351692webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:623)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:160)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:279)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
+	at com.letgo.tests.pages.MainPage.clickStayInUS(MainPage.java:30)
+	at com.letgo.tests.testcases.TestCase1.signUp(TestCase1.java:41)
+
+searchForItemInWrongGroup(com.letgo.tests.testcases.TestCase2)  Time elapsed: 4.245 sec  <<< FAILURE!
+org.openqa.selenium.WebDriverException: unknown error: Element <button data-test="update-location-cancel" type="button" role="button" class="sc-dnqmqq jqPtJG sc-bxivhb ifLSwk">...</button> is not clickable at point (767, 466). Other element would receive the click: <div style="transition: opacity 0.2s linear 0s, visibility; opacity: 0; visibility: hidden; background-color: rgba(255, 255, 255, 0.6);" class="Overlay__root___1UvWh" data-reactid="330">...</div>
+  (Session info: chrome=64.0.3282.167)
+  (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 10.0.15063 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.9.1', revision: '63f7b50', time: '2018-02-07T22:25:02.294Z'
+System info: host: '4DEDTYMCHYSH', ip: '10.223.164.34', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_161'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.35.528161 (5b82f2d2aae0ca..., userDataDir: C:\Users\tymchysh\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 64.0.3282.167, webStorageEnabled: true}
+Session ID: 1455629e839f8571f4c3ddbe71653d86
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:160)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:279)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
+	at com.letgo.tests.pages.MainPage.clickStayInUS(MainPage.java:30)
+	at com.letgo.tests.basetests.BaseTestCase.openMainPage(BaseTestCase.java:179)
+	at com.letgo.tests.testcases.TestCase2.searchForItemInWrongGroup(TestCase2.java:41)
 

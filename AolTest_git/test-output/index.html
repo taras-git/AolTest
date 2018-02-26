@@ -49,7 +49,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Suite">
-                    <span>testng.xml</span>
+                    <span>C:\Users\tymchysh\repos\AolTest\AolTest_git\testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">4 methods, 2 failed,   2 passed</span>
+                    <span class="method-stats">6 methods, 2 failed,   4 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -102,12 +102,12 @@
                     <div class="method-list-content failed suite-Suite">
                       <span>
                         <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.aol.tests.testcases.TestCase1" hash-for-method="testCase1">testCase1</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.letgo.tests.testcases.TestCase2" hash-for-method="searchForItemInWrongGroup">searchForItemInWrongGroup</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.aol.tests.testcases.TestCase2" hash-for-method="testCase2">testCase2</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.letgo.tests.testcases.TestCase1" hash-for-method="signUp">signUp</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Suite -->
@@ -121,12 +121,22 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.aol.tests.basetests.TestngTest" hash-for-method="nullPointerExseptionShouldPass">nullPointerExseptionShouldPass</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.letgo.tests.basetests.TestngTest" hash-for-method="nullPointerExseptionShouldPass">nullPointerExseptionShouldPass</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.aol.tests.basetests.TestngTest" hash-for-method="shouldAlwaysPass">shouldAlwaysPass</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.letgo.tests.testcases.TestCase2" hash-for-method="searchForItem">searchForItem</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.letgo.tests.basetests.TestngTest" hash-for-method="shouldAlwaysPass">shouldAlwaysPass</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.letgo.tests.testcases.TestCase2" hash-for-method="uploadPhoto">uploadPhoto</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -144,40 +154,36 @@
           <div class="suite-Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
-              <span class="class-name">com.aol.tests.testcases.TestCase2</span>
+              <span class="class-name">com.letgo.tests.testcases.TestCase2</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="testCase2">
-                  </a> <!-- testCase2 -->
-                  <span class="method-name">testCase2</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[contains(text(),\&quot;New York, NY\&quot;)]&quot;}
-Command duration or timeout: 30.03 seconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;2.52.0&apos;, revision: &apos;4c2593cfc3689a7fcd7be52549167e5ccc93ad28&apos;, time: &apos;2016-02-11 11:22:43&apos;
-System info: host: &apos;taras-X555LAB&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;4.2.0-34-generic&apos;, java.version: &apos;1.8.0_77&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=45.0, platform=LINUX, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: c9ae5b36-18aa-4663-bd7f-905fa3294c1b
-*** Element info: {Using=xpath, value=//a[contains(text(),&quot;New York, NY&quot;)]}
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-	at com.aol.tests.pages.basepage.BasePage.clickElement(BasePage.java:108)
-	at com.aol.tests.pages.aolpages.AolWeatherPage.setNewLocation(AolWeatherPage.java:33)
-	at com.aol.tests.testcases.TestCase2.testCase2(TestCase2.java:43)
-Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[contains(text(),\&quot;New York, NY\&quot;)]&quot;}
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;2.52.0&apos;, revision: &apos;4c2593cfc3689a7fcd7be52549167e5ccc93ad28&apos;, time: &apos;2016-02-11 11:22:43&apos;
-System info: host: &apos;taras-X555LAB&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;4.2.0-34-generic&apos;, java.version: &apos;1.8.0_77&apos;
-Driver info: driver.version: unknown
-	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///tmp/anonymous1527798704079351692webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10723)
-	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///tmp/anonymous1527798704079351692webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:623)
+                  <a name="searchForItemInWrongGroup">
+                  </a> <!-- searchForItemInWrongGroup -->
+                  <span class="method-name">searchForItemInWrongGroup</span>
+                  <div class="stack-trace">org.openqa.selenium.WebDriverException: unknown error: Element &lt;button data-test=&quot;update-location-cancel&quot; type=&quot;button&quot; role=&quot;button&quot; class=&quot;sc-dnqmqq jqPtJG sc-bxivhb ifLSwk&quot;&gt;...&lt;/button&gt; is not clickable at point (767, 466). Other element would receive the click: &lt;div style=&quot;transition: opacity 0.2s linear 0s, visibility; opacity: 0; visibility: hidden; background-color: rgba(255, 255, 255, 0.6);&quot; class=&quot;Overlay__root___1UvWh&quot; data-reactid=&quot;330&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=64.0.3282.167)
+  (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 10.0.15063 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: &apos;3.9.1&apos;, revision: &apos;63f7b50&apos;, time: &apos;2018-02-07T22:25:02.294Z&apos;
+System info: host: &apos;4DEDTYMCHYSH&apos;, ip: &apos;10.223.164.34&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_161&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.35.528161 (5b82f2d2aae0ca..., userDataDir: C:\Users\tymchysh\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 64.0.3282.167, webStorageEnabled: true}
+Session ID: 1455629e839f8571f4c3ddbe71653d86
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:160)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:279)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
+	at com.letgo.tests.pages.MainPage.clickStayInUS(MainPage.java:30)
+	at com.letgo.tests.basetests.BaseTestCase.openMainPage(BaseTestCase.java:179)
+	at com.letgo.tests.testcases.TestCase2.searchForItemInWrongGroup(TestCase2.java:41)
 ... Removed 31 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
@@ -187,17 +193,36 @@ Driver info: driver.version: unknown
           <div class="suite-Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
-              <span class="class-name">com.aol.tests.testcases.TestCase1</span>
+              <span class="class-name">com.letgo.tests.testcases.TestCase1</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="testCase1">
-                  </a> <!-- testCase1 -->
-                  <span class="method-name">testCase1</span>
-                  <div class="stack-trace">java.lang.AssertionError: AutoBlog page logo is not found!!!
-	at com.aol.tests.testcases.TestCase1.testCase1(TestCase1.java:82)
-... Removed 28 stack frames
+                  <a name="signUp">
+                  </a> <!-- signUp -->
+                  <span class="method-name">signUp</span>
+                  <div class="stack-trace">org.openqa.selenium.WebDriverException: unknown error: Element &lt;button data-test=&quot;update-location-cancel&quot; type=&quot;button&quot; role=&quot;button&quot; class=&quot;sc-dnqmqq jqPtJG sc-bxivhb ifLSwk&quot;&gt;...&lt;/button&gt; is not clickable at point (767, 466). Other element would receive the click: &lt;div style=&quot;transition: opacity 0.2s linear 0s, visibility; opacity: 1; visibility: visible; background-color: rgba(255, 255, 255, 0.6);&quot; class=&quot;Overlay__root___1UvWh&quot; data-reactid=&quot;330&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=64.0.3282.167)
+  (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 10.0.15063 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: &apos;3.9.1&apos;, revision: &apos;63f7b50&apos;, time: &apos;2018-02-07T22:25:02.294Z&apos;
+System info: host: &apos;4DEDTYMCHYSH&apos;, ip: &apos;10.223.164.34&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_161&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.35.528161 (5b82f2d2aae0ca..., userDataDir: C:\Users\tymchysh\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 64.0.3282.167, webStorageEnabled: true}
+Session ID: 4bb868de5c3d1d2bc08dea00268b5f29
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:160)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:279)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
+	at com.letgo.tests.pages.MainPage.clickStayInUS(MainPage.java:30)
+	at com.letgo.tests.testcases.TestCase1.signUp(TestCase1.java:41)
+... Removed 31 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -206,7 +231,7 @@ Driver info: driver.version: unknown
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">com.aol.tests.basetests.TestngTest</span>
+              <span class="class-name">com.letgo.tests.basetests.TestngTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
@@ -225,10 +250,32 @@ Driver info: driver.version: unknown
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.letgo.tests.testcases.TestCase2</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="searchForItem">
+                  </a> <!-- searchForItem -->
+                  <span class="method-name">searchForItem</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="uploadPhoto">
+                  </a> <!-- uploadPhoto -->
+                  <span class="method-name">uploadPhoto</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">/home/taras/Project/AolTest/testng.xml</span>
+            <span class="header-content">C:\Users\tymchysh\repos\AolTest\AolTest_git\testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -237,9 +284,9 @@ Driver info: driver.version: unknown
 &lt;suite guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot; name=&quot;Suite&quot;&gt;
   &lt;test name=&quot;Test&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.aol.tests.basetests.TestngTest&quot;/&gt;
-      &lt;class name=&quot;com.aol.tests.testcases.TestCase1&quot;/&gt;
-      &lt;class name=&quot;com.aol.tests.testcases.TestCase2&quot;/&gt;
+      &lt;class name=&quot;com.letgo.tests.basetests.TestngTest&quot;/&gt;
+      &lt;class name=&quot;com.letgo.tests.testcases.TestCase1&quot;/&gt;
+      &lt;class name=&quot;com.letgo.tests.testcases.TestCase2&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
@@ -291,28 +338,36 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(4);
+data.addRows(6);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'testCase2')
-data.setCell(0, 2, 'com.aol.tests.testcases.TestCase2')
-data.setCell(0, 3, 67929);
+data.setCell(0, 1, 'uploadPhoto')
+data.setCell(0, 2, 'com.letgo.tests.testcases.TestCase2')
+data.setCell(0, 3, 14469);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'testCase1')
-data.setCell(1, 2, 'com.aol.tests.testcases.TestCase1')
-data.setCell(1, 3, 42767);
+data.setCell(1, 1, 'searchForItem')
+data.setCell(1, 2, 'com.letgo.tests.testcases.TestCase2')
+data.setCell(1, 3, 6803);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'nullPointerExseptionShouldPass')
-data.setCell(2, 2, 'com.aol.tests.basetests.TestngTest')
-data.setCell(2, 3, 5);
+data.setCell(2, 1, 'searchForItemInWrongGroup')
+data.setCell(2, 2, 'com.letgo.tests.testcases.TestCase2')
+data.setCell(2, 3, 4244);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'shouldAlwaysPass')
-data.setCell(3, 2, 'com.aol.tests.basetests.TestngTest')
-data.setCell(3, 3, 1);
+data.setCell(3, 1, 'signUp')
+data.setCell(3, 2, 'com.letgo.tests.testcases.TestCase1')
+data.setCell(3, 3, 3895);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'nullPointerExseptionShouldPass')
+data.setCell(4, 2, 'com.letgo.tests.basetests.TestngTest')
+data.setCell(4, 3, 5);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'shouldAlwaysPass')
+data.setCell(5, 2, 'com.letgo.tests.basetests.TestngTest')
+data.setCell(5, 3, 2);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <span class="suite-total-time">Total running time: 29 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -338,7 +393,7 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.aol.tests.basetests.TestngTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.letgo.tests.basetests.TestngTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">nullPointerExseptionShouldPass</span>
                 <span class="method-start">0 ms</span>
@@ -349,7 +404,7 @@ return data;
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">com.aol.tests.testcases.TestCase1</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.letgo.tests.testcases.TestCase1</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
                 <span class="method-start">10 ms</span>
@@ -357,29 +412,53 @@ return data;
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">testCase1</span>
-                <span class="method-start">2681 ms</span>
+                <span class="method-name">signUp</span>
+                <span class="method-start">2708 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">45451 ms</span>
+                <span class="method-start">6610 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">com.aol.tests.testcases.TestCase2</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.letgo.tests.testcases.TestCase2</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">45535 ms</span>
+                <span class="method-start">7260 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">searchForItem</span>
+                <span class="method-start">9266 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">16070 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">16721 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">testCase2</span>
-                <span class="method-start">47609 ms</span>
+                <span class="method-name">searchForItemInWrongGroup</span>
+                <span class="method-start">18748 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">115545 ms</span>
+                <span class="method-start">22994 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">23639 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">uploadPhoto</span>
+                <span class="method-start">25687 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">40156 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

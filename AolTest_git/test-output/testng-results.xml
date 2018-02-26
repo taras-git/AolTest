@@ -1,21 +1,210 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="2" total="4" passed="2">
+<testng-results skipped="0" failed="2" total="6" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="115782" started-at="2016-04-02T07:42:25Z" finished-at="2016-04-02T07:44:21Z">
+  <suite name="Suite" duration-ms="40842" started-at="2018-02-26T08:17:00Z" finished-at="2018-02-26T08:17:41Z">
     <groups>
       <group name="testng">
-        <method signature="TestngTest.nullPointerExseptionShouldPass()[pri:0, instance:com.aol.tests.basetests.TestngTest@2a2d45ba]" name="nullPointerExseptionShouldPass" class="com.aol.tests.basetests.TestngTest"/>
-        <method signature="TestngTest.shouldAlwaysPass()[pri:0, instance:com.aol.tests.basetests.TestngTest@2a2d45ba]" name="shouldAlwaysPass" class="com.aol.tests.basetests.TestngTest"/>
+        <method signature="TestngTest.nullPointerExseptionShouldPass()[pri:0, instance:com.letgo.tests.basetests.TestngTest@d8355a8]" name="nullPointerExseptionShouldPass" class="com.letgo.tests.basetests.TestngTest"/>
+        <method signature="TestngTest.shouldAlwaysPass()[pri:0, instance:com.letgo.tests.basetests.TestngTest@d8355a8]" name="shouldAlwaysPass" class="com.letgo.tests.basetests.TestngTest"/>
       </group> <!-- testng -->
     </groups>
-    <test name="Test" duration-ms="115782" started-at="2016-04-02T07:42:25Z" finished-at="2016-04-02T07:44:21Z">
-      <class name="com.aol.tests.basetests.TestngTest">
-        <test-method status="PASS" signature="nullPointerExseptionShouldPass()[pri:0, instance:com.aol.tests.basetests.TestngTest@2a2d45ba]" name="nullPointerExseptionShouldPass" duration-ms="5" started-at="2016-04-02T10:42:25Z" finished-at="2016-04-02T10:42:25Z">
+    <test name="Test" duration-ms="40842" started-at="2018-02-26T08:17:00Z" finished-at="2018-02-26T08:17:41Z">
+      <class name="com.letgo.tests.testcases.TestCase1">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.letgo.tests.testcases.TestCase1@59fa1d9b]" name="setUp" is-config="true" duration-ms="2698" started-at="2018-02-26T10:17:00Z" finished-at="2018-02-26T10:17:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="FAIL" signature="signUp()[pri:0, instance:com.letgo.tests.testcases.TestCase1@59fa1d9b]" name="signUp" duration-ms="3895" depends-on-groups="testng" started-at="2018-02-26T10:17:03Z" finished-at="2018-02-26T10:17:07Z">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[unknown error: Element <button data-test="update-location-cancel" type="button" role="button" class="sc-dnqmqq jqPtJG sc-bxivhb ifLSwk">...</button> is not clickable at point (767, 466). Other element would receive the click: <div style="transition: opacity 0.2s linear 0s, visibility; opacity: 1; visibility: visible; background-color: rgba(255, 255, 255, 0.6);" class="Overlay__root___1UvWh" data-reactid="330">...</div>
+  (Session info: chrome=64.0.3282.167)
+  (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 10.0.15063 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.9.1', revision: '63f7b50', time: '2018-02-07T22:25:02.294Z'
+System info: host: '4DEDTYMCHYSH', ip: '10.223.164.34', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_161'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.35.528161 (5b82f2d2aae0ca..., userDataDir: C:\Users\tymchysh\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 64.0.3282.167, webStorageEnabled: true}
+Session ID: 4bb868de5c3d1d2bc08dea00268b5f29]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: unknown error: Element <button data-test="update-location-cancel" type="button" role="button" class="sc-dnqmqq jqPtJG sc-bxivhb ifLSwk">...</button> is not clickable at point (767, 466). Other element would receive the click: <div style="transition: opacity 0.2s linear 0s, visibility; opacity: 1; visibility: visible; background-color: rgba(255, 255, 255, 0.6);" class="Overlay__root___1UvWh" data-reactid="330">...</div>
+  (Session info: chrome=64.0.3282.167)
+  (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 10.0.15063 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.9.1', revision: '63f7b50', time: '2018-02-07T22:25:02.294Z'
+System info: host: '4DEDTYMCHYSH', ip: '10.223.164.34', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_161'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.35.528161 (5b82f2d2aae0ca..., userDataDir: C:\Users\tymchysh\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 64.0.3282.167, webStorageEnabled: true}
+Session ID: 4bb868de5c3d1d2bc08dea00268b5f29
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:160)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:279)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
+	at com.letgo.tests.pages.MainPage.clickStayInUS(MainPage.java:30)
+	at com.letgo.tests.testcases.TestCase1.signUp(TestCase1.java:41)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:295)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:84)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:90)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signUp -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.letgo.tests.testcases.TestCase1@59fa1d9b]" name="tearDown" is-config="true" duration-ms="649" started-at="2018-02-26T10:17:07Z" finished-at="2018-02-26T10:17:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.letgo.tests.testcases.TestCase1 -->
+      <class name="com.letgo.tests.testcases.TestCase2">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.letgo.tests.testcases.TestCase2@523884b2]" name="setUp" is-config="true" duration-ms="2006" started-at="2018-02-26T10:17:08Z" finished-at="2018-02-26T10:17:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="searchForItem()[pri:0, instance:com.letgo.tests.testcases.TestCase2@523884b2]" name="searchForItem" duration-ms="6803" depends-on-groups="testng" started-at="2018-02-26T10:17:10Z" finished-at="2018-02-26T10:17:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchForItem -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.letgo.tests.testcases.TestCase2@523884b2]" name="tearDown" is-config="true" duration-ms="651" started-at="2018-02-26T10:17:16Z" finished-at="2018-02-26T10:17:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.letgo.tests.testcases.TestCase2@523884b2]" name="setUp" is-config="true" duration-ms="2027" started-at="2018-02-26T10:17:17Z" finished-at="2018-02-26T10:17:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="FAIL" signature="searchForItemInWrongGroup()[pri:0, instance:com.letgo.tests.testcases.TestCase2@523884b2]" name="searchForItemInWrongGroup" duration-ms="4244" depends-on-groups="testng" started-at="2018-02-26T10:17:19Z" finished-at="2018-02-26T10:17:23Z">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[unknown error: Element <button data-test="update-location-cancel" type="button" role="button" class="sc-dnqmqq jqPtJG sc-bxivhb ifLSwk">...</button> is not clickable at point (767, 466). Other element would receive the click: <div style="transition: opacity 0.2s linear 0s, visibility; opacity: 0; visibility: hidden; background-color: rgba(255, 255, 255, 0.6);" class="Overlay__root___1UvWh" data-reactid="330">...</div>
+  (Session info: chrome=64.0.3282.167)
+  (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 10.0.15063 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.9.1', revision: '63f7b50', time: '2018-02-07T22:25:02.294Z'
+System info: host: '4DEDTYMCHYSH', ip: '10.223.164.34', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_161'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.35.528161 (5b82f2d2aae0ca..., userDataDir: C:\Users\tymchysh\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 64.0.3282.167, webStorageEnabled: true}
+Session ID: 1455629e839f8571f4c3ddbe71653d86]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: unknown error: Element <button data-test="update-location-cancel" type="button" role="button" class="sc-dnqmqq jqPtJG sc-bxivhb ifLSwk">...</button> is not clickable at point (767, 466). Other element would receive the click: <div style="transition: opacity 0.2s linear 0s, visibility; opacity: 0; visibility: hidden; background-color: rgba(255, 255, 255, 0.6);" class="Overlay__root___1UvWh" data-reactid="330">...</div>
+  (Session info: chrome=64.0.3282.167)
+  (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 10.0.15063 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.9.1', revision: '63f7b50', time: '2018-02-07T22:25:02.294Z'
+System info: host: '4DEDTYMCHYSH', ip: '10.223.164.34', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_161'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.35.528161 (5b82f2d2aae0ca..., userDataDir: C:\Users\tymchysh\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 64.0.3282.167, webStorageEnabled: true}
+Session ID: 1455629e839f8571f4c3ddbe71653d86
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:160)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:279)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
+	at com.letgo.tests.pages.MainPage.clickStayInUS(MainPage.java:30)
+	at com.letgo.tests.basetests.BaseTestCase.openMainPage(BaseTestCase.java:179)
+	at com.letgo.tests.testcases.TestCase2.searchForItemInWrongGroup(TestCase2.java:41)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:295)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:84)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:90)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchForItemInWrongGroup -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.letgo.tests.testcases.TestCase2@523884b2]" name="tearDown" is-config="true" duration-ms="644" started-at="2018-02-26T10:17:23Z" finished-at="2018-02-26T10:17:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.letgo.tests.testcases.TestCase2@523884b2]" name="setUp" is-config="true" duration-ms="2048" started-at="2018-02-26T10:17:24Z" finished-at="2018-02-26T10:17:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="uploadPhoto()[pri:0, instance:com.letgo.tests.testcases.TestCase2@523884b2]" name="uploadPhoto" duration-ms="14469" depends-on-groups="testng" started-at="2018-02-26T10:17:26Z" finished-at="2018-02-26T10:17:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- uploadPhoto -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.letgo.tests.testcases.TestCase2@523884b2]" name="tearDown" is-config="true" duration-ms="675" started-at="2018-02-26T10:17:41Z" finished-at="2018-02-26T10:17:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.letgo.tests.testcases.TestCase2 -->
+      <class name="com.letgo.tests.basetests.TestngTest">
+        <test-method status="PASS" signature="nullPointerExseptionShouldPass()[pri:0, instance:com.letgo.tests.basetests.TestngTest@d8355a8]" name="nullPointerExseptionShouldPass" duration-ms="5" started-at="2018-02-26T10:17:00Z" finished-at="2018-02-26T10:17:00Z">
           <exception class="java.lang.NullPointerException">
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException
-	at com.aol.tests.basetests.TestngTest.nullPointerExseptionShouldPass(TestngTest.java:23)
+	at com.letgo.tests.basetests.TestngTest.nullPointerExseptionShouldPass(TestngTest.java:23)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -49,150 +238,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- nullPointerExseptionShouldPass -->
-        <test-method status="PASS" signature="shouldAlwaysPass()[pri:0, instance:com.aol.tests.basetests.TestngTest@2a2d45ba]" name="shouldAlwaysPass" duration-ms="1" started-at="2016-04-02T10:42:25Z" finished-at="2016-04-02T10:42:25Z">
+        <test-method status="PASS" signature="shouldAlwaysPass()[pri:0, instance:com.letgo.tests.basetests.TestngTest@d8355a8]" name="shouldAlwaysPass" duration-ms="2" started-at="2018-02-26T10:17:00Z" finished-at="2018-02-26T10:17:00Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- shouldAlwaysPass -->
-      </class> <!-- com.aol.tests.basetests.TestngTest -->
-      <class name="com.aol.tests.testcases.TestCase1">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.aol.tests.testcases.TestCase1@2a5ca609]" name="setUp" is-config="true" duration-ms="2671" started-at="2016-04-02T10:42:25Z" finished-at="2016-04-02T10:42:28Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="FAIL" signature="testCase1()[pri:0, instance:com.aol.tests.testcases.TestCase1@2a5ca609]" name="testCase1" duration-ms="42767" depends-on-groups="testng" started-at="2016-04-02T10:42:28Z" finished-at="2016-04-02T10:43:11Z">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[AutoBlog page logo is not found!!!]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: AutoBlog page logo is not found!!!
-	at org.testng.Assert.fail(Assert.java:94)
-	at com.aol.tests.testcases.TestCase1.testCase1(TestCase1.java:82)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:782)
-	at org.testng.TestRunner.run(TestRunner.java:632)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
-	at org.testng.TestNG.run(TestNG.java:1064)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:295)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:84)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:90)
-	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testCase1 -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.aol.tests.testcases.TestCase1@2a5ca609]" name="tearDown" is-config="true" duration-ms="82" started-at="2016-04-02T10:43:11Z" finished-at="2016-04-02T10:43:11Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.aol.tests.testcases.TestCase1 -->
-      <class name="com.aol.tests.testcases.TestCase2">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.aol.tests.testcases.TestCase2@28feb3fa]" name="setUp" is-config="true" duration-ms="2074" started-at="2016-04-02T10:43:11Z" finished-at="2016-04-02T10:43:13Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="FAIL" signature="testCase2()[pri:0, instance:com.aol.tests.testcases.TestCase2@28feb3fa]" name="testCase2" duration-ms="67929" depends-on-groups="testng" started-at="2016-04-02T10:43:13Z" finished-at="2016-04-02T10:44:21Z">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[Unable to locate element: {"method":"xpath","selector":"//a[contains(text(),\"New York, NY\")]"}
-Command duration or timeout: 30.03 seconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.52.0', revision: '4c2593cfc3689a7fcd7be52549167e5ccc93ad28', time: '2016-02-11 11:22:43'
-System info: host: 'taras-X555LAB', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.2.0-34-generic', java.version: '1.8.0_77'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=45.0, platform=LINUX, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: c9ae5b36-18aa-4663-bd7f-905fa3294c1b
-*** Element info: {Using=xpath, value=//a[contains(text(),"New York, NY")]}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"xpath","selector":"//a[contains(text(),\"New York, NY\")]"}
-Command duration or timeout: 30.03 seconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.52.0', revision: '4c2593cfc3689a7fcd7be52549167e5ccc93ad28', time: '2016-02-11 11:22:43'
-System info: host: 'taras-X555LAB', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.2.0-34-generic', java.version: '1.8.0_77'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=45.0, platform=LINUX, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: c9ae5b36-18aa-4663-bd7f-905fa3294c1b
-*** Element info: {Using=xpath, value=//a[contains(text(),"New York, NY")]}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-	at com.aol.tests.pages.basepage.BasePage.clickElement(BasePage.java:108)
-	at com.aol.tests.pages.aolpages.AolWeatherPage.setNewLocation(AolWeatherPage.java:33)
-	at com.aol.tests.testcases.TestCase2.testCase2(TestCase2.java:43)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:782)
-	at org.testng.TestRunner.run(TestRunner.java:632)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
-	at org.testng.TestNG.run(TestNG.java:1064)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:295)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:84)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:90)
-	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
-Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"xpath","selector":"//a[contains(text(),\"New York, NY\")]"}
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.52.0', revision: '4c2593cfc3689a7fcd7be52549167e5ccc93ad28', time: '2016-02-11 11:22:43'
-System info: host: 'taras-X555LAB', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.2.0-34-generic', java.version: '1.8.0_77'
-Driver info: driver.version: unknown
-	at <anonymous class>.FirefoxDriver.prototype.findElementInternal_(file:///tmp/anonymous1527798704079351692webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10723)
-	at <anonymous class>.fxdriver.Timer.prototype.setTimeout/<.notify(file:///tmp/anonymous1527798704079351692webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:623)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testCase2 -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.aol.tests.testcases.TestCase2@28feb3fa]" name="tearDown" is-config="true" duration-ms="226" started-at="2016-04-02T10:44:21Z" finished-at="2016-04-02T10:44:21Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.aol.tests.testcases.TestCase2 -->
+      </class> <!-- com.letgo.tests.basetests.TestngTest -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>

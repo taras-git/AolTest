@@ -12,7 +12,7 @@
 <body>
 <h1>Test</h1>
 <p>
-  Test duration: 115.755s
+  Test duration: 40.816s
 </p>
 
 
@@ -20,25 +20,47 @@
   <table class="resultsTable">
     <tr><th colspan="3" class="header failed">Failed Tests</th></tr>
           <tr>
-        <td colspan="3" class="group">com.aol.tests.testcases.TestCase1</td>
+        <td colspan="3" class="group">com.letgo.tests.testcases.TestCase1</td>
       </tr>
             
 <tr>
   <td class="method">
-                  testCase1
+                  signUp
       </td>
   <td class="duration">
-    42.767s
+    3.895s
   </td>
   <td class="result">
         
     
         
 
-        <a href="javascript:toggleElement('exception-0', 'block')" title="Click to expand/collapse"><b>java.lang.AssertionError: AutoBlog page logo is not found!!!</b></a><br />
+        <a href="javascript:toggleElement('exception-0', 'block')" title="Click to expand/collapse"><b>org.openqa.selenium.WebDriverException: unknown error: Element &lt;button data-test=&quot;update-location-cancel&quot; type=&quot;button&quot; role=&quot;button&quot; class=&quot;sc-dnqmqq jqPtJG sc-bxivhb ifLSwk&quot;&gt;...&lt;/button&gt; is not clickable at point (767, 466). Other element would receive the click: &lt;div style=&quot;transition: opacity 0.2s linear 0s, visibility; opacity: 1; visibility: visible; background-color: rgba(255, 255, 255, 0.6);&quot; class=&quot;Overlay__root___1UvWh&quot; data-reactid=&quot;330&quot;&gt;...&lt;/div&gt;<br/>
+&nbsp; (Session info: chrome=64.0.3282.167)<br/>
+&nbsp; (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 10.0.15063 x86_64) (WARNING: The server did not provide any stacktrace information)<br/>
+Command duration or timeout: 0 milliseconds<br/>
+Build info: version: &apos;3.9.1&apos;, revision: &apos;63f7b50&apos;, time: &apos;2018-02-07T22:25:02.294Z&apos;<br/>
+System info: host: &apos;4DEDTYMCHYSH&apos;, ip: &apos;10.223.164.34&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_161&apos;<br/>
+Driver info: org.openqa.selenium.chrome.ChromeDriver<br/>
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.35.528161 (5b82f2d2aae0ca..., userDataDir: C:\Users\tymchysh\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 64.0.3282.167, webStorageEnabled: true}<br/>
+Session ID: 4bb868de5c3d1d2bc08dea00268b5f29</b></a><br />
     <div class="stackTrace" id="exception-0">
-              org.testng.Assert.fail(Assert.java:94)<br />
-              com.aol.tests.testcases.TestCase1.testCase1(TestCase1.java:82)<br />
+              sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)<br />
+              sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)<br />
+              sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)<br />
+              java.lang.reflect.Constructor.newInstance(Constructor.java:423)<br />
+              org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)<br />
+              org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)<br />
+              org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)<br />
+              org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)<br />
+              org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)<br />
+              org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:160)<br />
+              org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)<br />
+              org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:279)<br />
+              org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)<br />
+              com.letgo.tests.pages.MainPage.clickStayInUS(MainPage.java:30)<br />
+              com.letgo.tests.testcases.TestCase1.signUp(TestCase1.java:41)<br />
               sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
               sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br />
               sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
@@ -70,45 +92,48 @@
       </td>
 </tr>
           <tr>
-        <td colspan="3" class="group">com.aol.tests.testcases.TestCase2</td>
+        <td colspan="3" class="group">com.letgo.tests.testcases.TestCase2</td>
       </tr>
             
 <tr>
   <td class="method">
-                  testCase2
+                  searchForItemInWrongGroup
       </td>
   <td class="duration">
-    67.929s
+    4.244s
   </td>
   <td class="result">
         
     
         
 
-        <a href="javascript:toggleElement('exception-1', 'block')" title="Click to expand/collapse"><b>org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[contains(text(),\&quot;New York, NY\&quot;)]&quot;}<br/>
-Command duration or timeout: 30.03 seconds<br/>
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html<br/>
-Build info: version: &apos;2.52.0&apos;, revision: &apos;4c2593cfc3689a7fcd7be52549167e5ccc93ad28&apos;, time: &apos;2016-02-11 11:22:43&apos;<br/>
-System info: host: &apos;taras-X555LAB&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;4.2.0-34-generic&apos;, java.version: &apos;1.8.0_77&apos;<br/>
-Driver info: org.openqa.selenium.firefox.FirefoxDriver<br/>
-Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=45.0, platform=LINUX, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]<br/>
-Session ID: c9ae5b36-18aa-4663-bd7f-905fa3294c1b<br/>
-*** Element info: {Using=xpath, value=//a[contains(text(),&quot;New York, NY&quot;)]}</b></a><br />
+        <a href="javascript:toggleElement('exception-1', 'block')" title="Click to expand/collapse"><b>org.openqa.selenium.WebDriverException: unknown error: Element &lt;button data-test=&quot;update-location-cancel&quot; type=&quot;button&quot; role=&quot;button&quot; class=&quot;sc-dnqmqq jqPtJG sc-bxivhb ifLSwk&quot;&gt;...&lt;/button&gt; is not clickable at point (767, 466). Other element would receive the click: &lt;div style=&quot;transition: opacity 0.2s linear 0s, visibility; opacity: 0; visibility: hidden; background-color: rgba(255, 255, 255, 0.6);&quot; class=&quot;Overlay__root___1UvWh&quot; data-reactid=&quot;330&quot;&gt;...&lt;/div&gt;<br/>
+&nbsp; (Session info: chrome=64.0.3282.167)<br/>
+&nbsp; (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 10.0.15063 x86_64) (WARNING: The server did not provide any stacktrace information)<br/>
+Command duration or timeout: 0 milliseconds<br/>
+Build info: version: &apos;3.9.1&apos;, revision: &apos;63f7b50&apos;, time: &apos;2018-02-07T22:25:02.294Z&apos;<br/>
+System info: host: &apos;4DEDTYMCHYSH&apos;, ip: &apos;10.223.164.34&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_161&apos;<br/>
+Driver info: org.openqa.selenium.chrome.ChromeDriver<br/>
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.35.528161 (5b82f2d2aae0ca..., userDataDir: C:\Users\tymchysh\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 64.0.3282.167, webStorageEnabled: true}<br/>
+Session ID: 1455629e839f8571f4c3ddbe71653d86</b></a><br />
     <div class="stackTrace" id="exception-1">
               sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)<br />
               sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)<br />
               sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)<br />
               java.lang.reflect.Constructor.newInstance(Constructor.java:423)<br />
-              org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)<br />
-              org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)<br />
-              org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)<br />
-              org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)<br />
-              org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)<br />
-              org.openqa.selenium.By$ByXPath.findElement(By.java:361)<br />
-              org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)<br />
-              com.aol.tests.pages.basepage.BasePage.clickElement(BasePage.java:108)<br />
-              com.aol.tests.pages.aolpages.AolWeatherPage.setNewLocation(AolWeatherPage.java:33)<br />
-              com.aol.tests.testcases.TestCase2.testCase2(TestCase2.java:43)<br />
+              org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)<br />
+              org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)<br />
+              org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)<br />
+              org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)<br />
+              org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)<br />
+              org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:160)<br />
+              org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)<br />
+              org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:279)<br />
+              org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)<br />
+              com.letgo.tests.pages.MainPage.clickStayInUS(MainPage.java:30)<br />
+              com.letgo.tests.basetests.BaseTestCase.openMainPage(BaseTestCase.java:179)<br />
+              com.letgo.tests.testcases.TestCase2.searchForItemInWrongGroup(TestCase2.java:41)<br />
               sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
               sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br />
               sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
@@ -136,16 +161,7 @@ Session ID: c9ae5b36-18aa-4663-bd7f-905fa3294c1b<br/>
               org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)<br />
               org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)<br />
               org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)<br />
-                    <b>Caused by: </b> <a href="javascript:toggleElement('exception-2', 'block')" title="Click to expand/collapse">org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[contains(text(),\&quot;New York, NY\&quot;)]&quot;}<br/>
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html<br/>
-Build info: version: &apos;2.52.0&apos;, revision: &apos;4c2593cfc3689a7fcd7be52549167e5ccc93ad28&apos;, time: &apos;2016-02-11 11:22:43&apos;<br/>
-System info: host: &apos;taras-X555LAB&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;4.2.0-34-generic&apos;, java.version: &apos;1.8.0_77&apos;<br/>
-Driver info: driver.version: unknown</a><br />
-        <div class="stackTrace" id="exception-2">
-                      &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///tmp/anonymous1527798704079351692webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10723)<br />
-                      &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///tmp/anonymous1527798704079351692webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:623)<br />
-                  </div>
-          </div>
+                </div>
       </td>
 </tr>
       </table>
@@ -154,7 +170,7 @@ Driver info: driver.version: unknown</a><br />
   <table class="resultsTable">
     <tr><th colspan="3" class="header passed">Passed Tests</th></tr>
           <tr>
-        <td colspan="3" class="group">com.aol.tests.basetests.TestngTest</td>
+        <td colspan="3" class="group">com.letgo.tests.basetests.TestngTest</td>
       </tr>
             
 <tr>
@@ -176,7 +192,39 @@ Driver info: driver.version: unknown</a><br />
                   shouldAlwaysPass
       </td>
   <td class="duration">
-    0.001s
+    0.002s
+  </td>
+  <td class="result">
+        
+    
+        
+
+      </td>
+</tr>
+          <tr>
+        <td colspan="3" class="group">com.letgo.tests.testcases.TestCase2</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  searchForItem
+      </td>
+  <td class="duration">
+    6.803s
+  </td>
+  <td class="result">
+        
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  uploadPhoto
+      </td>
+  <td class="duration">
+    14.469s
   </td>
   <td class="result">
         

@@ -1,8 +1,8 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>AolTest_git</groupId>
-	<artifactId>AolTest_git</artifactId>
+	<groupId>LetgoTest</groupId>
+	<artifactId>LetgoTest</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 
 	<properties>
@@ -19,8 +19,8 @@
 				<artifactId>maven-compiler-plugin</artifactId>
 				<version>3.2</version>
 				<configuration>
-					<source>1.7</source>
-					<target>1.7</target>
+					<source>1.8</source>
+					<target>1.8</target>
 					<encoding>UTF-8</encoding>
 				</configuration>
 			</plugin>
@@ -86,13 +86,12 @@
 							<mailport>465</mailport>
 							<mailssl>true</mailssl>
 							<mailAltConfig>true</mailAltConfig>
-							<mailuser>aoltester@yahoo.com</mailuser>
-							<mailpassword>QuodLicetJovi</mailpassword>
-							<from>aoltester@yahoo.com</from>
+							<mailuser>letgowebapp@yahoo.com</mailuser>
+							<mailpassword>1PassForWebApp</mailpassword>
+							<from>letgowebapp@yahoo.com</from>
 
 							<receivers>
-								<receiver>taraspol@gmail.com</receiver>
-								<receiver>aoltester@yahoo.com</receiver>
+								<receiver>letgowebapp@yahoo.com</receiver>
 							</receivers>
 
 							<subject>Selenium Test Run</subject>
@@ -121,8 +120,6 @@
 		</plugins>
 
 	</build>
-
-
 
 	<dependencies>
 
@@ -154,17 +151,24 @@
 		<dependency>
 			<groupId>org.seleniumhq.selenium</groupId>
 			<artifactId>selenium-firefox-driver</artifactId>
-			<version>2.52.0</version>
+			<version>3.9.1</version>
 		</dependency>
 
 		<dependency>
 			<groupId>org.seleniumhq.selenium</groupId>
 			<artifactId>selenium-chrome-driver</artifactId>
-			<version>2.53.0</version>
+			<version>3.9.1</version>
 		</dependency>
 
+
+<!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
+<dependency>
+    <groupId>org.seleniumhq.selenium</groupId>
+    <artifactId>selenium-java</artifactId>
+    <version>3.9.1</version>
+</dependency>
+
+
 	</dependencies>
-
-
 
 </project>

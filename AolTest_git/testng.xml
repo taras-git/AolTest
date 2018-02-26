@@ -3,9 +3,9 @@
 <suite name="Suite">
   <test name="Test">
     <classes>
-      <class name="com.aol.tests.basetests.TestngTest"/>
-      <class name="com.aol.tests.testcases.TestCase1"/>
-      <class name="com.aol.tests.testcases.TestCase2"/>
+      <class name="com.letgo.tests.basetests.TestngTest"/>
+      <class name="com.letgo.tests.testcases.TestCase1"/>
+      <class name="com.letgo.tests.testcases.TestCase2"/>
     </classes>
   </test> 
 </suite> 

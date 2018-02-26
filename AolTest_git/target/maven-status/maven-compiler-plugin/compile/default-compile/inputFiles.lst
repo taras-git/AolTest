@@ -1,10 +1,7 @@
-/home/taras/Project/AolTest/src/com/aol/tests/testcases/TestCase1.java
-/home/taras/Project/AolTest/src/com/aol/tests/pages/aolpages/AolMainPage.java
-/home/taras/Project/AolTest/src/com/aol/tests/utils/Utils.java
-/home/taras/Project/AolTest/src/com/aol/tests/basetests/TestngTest.java
-/home/taras/Project/AolTest/src/com/aol/tests/pages/aolpages/AolSearchPage.java
-/home/taras/Project/AolTest/src/com/aol/tests/pages/aolpages/AolWeatherPage.java
-/home/taras/Project/AolTest/src/com/aol/tests/pages/basepage/BasePage.java
-/home/taras/Project/AolTest/src/com/aol/tests/testcases/TestCase2.java
-/home/taras/Project/AolTest/src/com/aol/tests/pages/autoblogpages/AutoBlogPage.java
-/home/taras/Project/AolTest/src/com/aol/tests/basetests/BaseTestCase.java
+C:\Users\tymchysh\repos\AolTest\AolTest_git\src\com\letgo\tests\basetests\BaseTestCase.java
+C:\Users\tymchysh\repos\AolTest\AolTest_git\src\com\letgo\tests\pages\basepage\BasePage.java
+C:\Users\tymchysh\repos\AolTest\AolTest_git\src\com\letgo\tests\utils\Utils.java
+C:\Users\tymchysh\repos\AolTest\AolTest_git\src\com\letgo\tests\basetests\TestngTest.java
+C:\Users\tymchysh\repos\AolTest\AolTest_git\src\com\letgo\tests\testcases\TestCase2.java
+C:\Users\tymchysh\repos\AolTest\AolTest_git\src\com\letgo\tests\pages\MainPage.java
+C:\Users\tymchysh\repos\AolTest\AolTest_git\src\com\letgo\tests\testcases\TestCase1.java
